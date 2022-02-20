@@ -34,4 +34,8 @@ public class SimpleTask implements Task {
     }
 
     public void update() {}
+
+    public boolean equals(Task task) {
+        return this.title.equals(task.title());
+    }
 }   

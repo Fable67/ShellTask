@@ -18,5 +18,12 @@ public class ShellTask {
         System.out.print("Status: ");
         System.out.println(task.status());
 
+        TaskManager m = new TaskManager();
+        try {
+            m.addTask(task);
+            m.removeTask(new SimpleTask("This is a  test task", ""));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

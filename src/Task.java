@@ -6,4 +6,5 @@ public interface Task {
     TaskStatus status();
     void setStatus(TaskStatus status);
     void update();
+    boolean equals(Task task);
 }
